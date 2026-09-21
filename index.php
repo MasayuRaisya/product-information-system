@@ -68,16 +68,16 @@ $potensiOmzet = hitungTotalNilaiStok($products);
         .baris-kritis {
             background-color: rgba(253, 93, 147, 0.15);
         }
-        .badge-kritis {
-            background-color: #fd5d93;
-            color: #fff;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            margin-left: 5px;
-            white-space: nowrap; /* Biar tulisan tidak terpotong ke bawah */
+       .badge-kritis {
+    background-color: #fd5d93;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    margin-left: 5px;
+    white-space: nowrap; /* Mencegah teks terpotong ke bawah */
     display: inline-block;
-        }
+}
     </style>
 </head>
 <body>
