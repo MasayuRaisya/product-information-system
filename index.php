@@ -99,7 +99,7 @@ $potensiOmzet = hitungTotalNilaiStok($products);
                     <th>Nama Menu</th>
                     <th>Kategori</th>
                     <th>Harga Satuan</th>
-                    <th>Sisa Porsi</th>
+                    <th style="min-width: 140px;">Sisa Porsi</th>
                     <th>Detail Komposisi / Deskripsi</th>
                 </tr>
             </thead>
