@@ -75,6 +75,8 @@ $potensiOmzet = hitungTotalNilaiStok($products);
             border-radius: 4px;
             font-size: 0.75em;
             margin-left: 5px;
+            white-space: nowrap; /* Biar tulisan tidak terpotong ke bawah */
+    display: inline-block;
         }
     </style>
 </head>
