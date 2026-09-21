@@ -1,13 +1,13 @@
 <?php
-// functions.php - Logika bisnis dan kalkulasi data
+// functions.php - Logika bisnis dan kalkulasi nilai porsi tersisa
 
 /**
- * Menghitung total nilai aset barang di gudang (Harga * Stok)
+ * Mengkalkulasi potensi omzet dari seluruh porsi menu yang masih tersedia
  */
 function hitungTotalNilaiStok($products) {
-    $total = 0;
-    foreach ($products as $product) {
-        $total += $product['harga'] * $product['stok'];
+    $totalPotensiOmzet = 0;
+    foreach ($products as $item) {
+        $totalPotensiOmzet += $item['harga'] * $item['stok'];
     }
-    return $total;
+    return $totalPotensiOmzet;
 }
