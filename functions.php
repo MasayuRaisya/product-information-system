@@ -1,15 +1,13 @@
 <?php
+// functions.php - Logika bisnis dan kalkulasi data
 
-// Fungsi untuk menghitung total nilai stok
-function hitungTotalNilaiStok($harga, $stok)
-{
-    return $harga * $stok;
+/**
+ * Menghitung total nilai aset barang di gudang (Harga * Stok)
+ */
+function hitungTotalNilaiStok($products) {
+    $total = 0;
+    foreach ($products as $product) {
+        $total += $product['harga'] * $product['stok'];
+    }
+    return $total;
 }
-
-// Fungsi untuk menentukan apakah stok kritis
-function cekStokKritis($stok)
-{
-    return $stok < 3;
-}
-
-?>
